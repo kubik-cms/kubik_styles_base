@@ -7,6 +7,7 @@
   font-weight: 700;
   color: var(--kubik-interface-color-grey-500);
 }
+
 %admin_text_input_field {
   box-sizing: border-box;
   padding: var(--kubik-interface-space-100);
@@ -41,6 +42,7 @@
     font-weight: 500;
   }
 }
+
 %text_input_field {
   box-sizing: border-box;
   padding: var(--kubik-interface-space-100) var(--kubik-interface-space-300);
@@ -57,6 +59,7 @@
     border-color: var(--kubik-interface-color-brand-400);
   }
 }
+
 @mixin text_input_field {
   box-sizing: border-box;
   padding: var(--kubik-interface-space-100) var(--kubik-interface-space-300);

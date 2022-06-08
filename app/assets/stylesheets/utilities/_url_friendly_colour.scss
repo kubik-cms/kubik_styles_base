@@ -1,0 +1,4 @@
+@function url-friendly-colour($colour) {
+  @return '#' + str-slice('#{$colour}', 2, -1)
+}
+
