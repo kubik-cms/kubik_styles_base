@@ -1,7 +1,3 @@
-@import '../../elements/_containers.scss';
-@import '../../elements/_buttons.scss';
-@import '../../elements/_links.scss';
-@import '../../elements/_tabs.scss';
 #active_admin_content {
   .nav-tabs {
     @extend %slickr_tabs;
