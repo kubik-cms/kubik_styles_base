@@ -7,6 +7,7 @@
 %title_text {
   @include title_text;
 }
+
 @mixin title_link {
   color: var(--kubik-interface-color-brand-400);
   font-family: var(--kubik-interface-base-font-family);
@@ -23,6 +24,7 @@
 %title_link {
   @include title_link;
 }
+
 @mixin table_link {
   color: var(--kubik-interface-color-brand-400);
   font-family: var(--kubik-interface-base-font-family);
@@ -39,8 +41,9 @@
 %table_link {
   @include table_link;
 }
+
 @mixin general_link {
-  @include link_style;
+  @extend %link;
 
   position: relative;
   color: var(--kubik-interface-color-brand-400);

@@ -10,9 +10,12 @@
   text-decoration: none;
   line-height: 1;
   border: 2px solid var(--kubik-interface-color-brand-400);
-  border-radius: .25rem;
+  border-radius: var(--kubik-interface-radius-100);
   cursor: pointer;
-  transition: .2s;
+  transition: color .2s ease,
+              background .2s ease,
+              border-color .2s ease;
+
   &:hover {
     color: var(--kubik-interface-color-white);
     background: var(--kubik-interface-color-brand-500);
