@@ -1,4 +1,4 @@
-%fieldset {
+%kubik-form-fieldset {
   border: 0;
   padding: 0;
   margin: .9rem 1.75rem;
@@ -9,7 +9,7 @@
   }
 }
 
-%label {
+%kubik-form-label {
   font-family: var(--kubik-interface-base-font-family);
   font-size: var(--kubik-interface-font-size-small);
   color: var(--kubik-interface-color-brand-400);
@@ -19,7 +19,7 @@
   }
 }
 
-%hint {
+%kubik-form-hint {
   font-family: var(--kubik-interface-base-font-family);
   font-size: var(--kubik-interface-font-size-small);
   font-weight: 400;
@@ -28,7 +28,7 @@
   color: var(--kubik-interface-color-grey-400);
 }
 
-%form-error-message {
+%kubik-form-error-message {
   font-family: var(--kubik-interface-base-font-family);
   font-size: var(--kubik-interface-font-size-small);
   font-weight: 400;
@@ -37,7 +37,7 @@
   color: var(--kubik-interface-color-alert);
 }
 
-%field_base {
+%kubik-form-input-base {
   padding: .85rem .65rem;
   border: 1px solid transparent;
   border-radius: .2rem;
@@ -48,27 +48,27 @@
   background-color: var(--kubik-interface-color-grey-100);
 }
 
-%text_field {
-  @extend %field_base;
+%kubik-form-input-text {
+  @extend %kubik-form-input-base;
   width: 100%;
 }
 
-%textarea {
-  @extend %field_base;
+%kubik-form-input-textarea {
+  @extend %kubik-form-input-base;
   width: 100%;
   height: 8rem;
   resize: none;
 }
 
-%select_field {
-  @extend %field_base;
+%kubik-form-input-select {
+  @extend %kubik-form-input-base;
   width: 100%;
   border-right: 1rem solid transparent;
 }
 
 
-%checkbox {
-  @extend %field_base;
+%kubik-form-wrapper-checkbox {
+  @extend %kubik-form-input-base;
   padding-bottom: .6rem;
   display: flex;
   flex-direction: row;
@@ -77,15 +77,15 @@
   margin-bottom: .3rem;
 }
 
-%checkbox-white {
-  @extend %checkbox;
-  background: white;
-}
-
-%checkbox-input {
+%kubik-form-input-checkbox {
   margin: 0;
   margin-right: .3rem;
   &:checked {
     accent-color: var(--kubik-interface-color-brand-400);
   }
+}
+
+%kubik-form-input-checkbox--white {
+  @extend %kubik-form-input-checkbox;
+  background: white;
 }

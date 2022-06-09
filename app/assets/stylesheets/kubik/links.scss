@@ -43,7 +43,7 @@
 }
 
 @mixin general_link {
-  @extend %link;
+  @extend %kubik-typography-link;
 
   position: relative;
   color: var(--kubik-interface-color-brand-400);

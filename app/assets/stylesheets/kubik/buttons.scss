@@ -1,4 +1,4 @@
-%button {
+%kubik-button {
   box-sizing: border-box;
   display: inline-block;
   padding: .75rem 1.25rem;
@@ -23,15 +23,15 @@
   }
 }
 
-%small_button {
-  @extend %button;
+%kubik-button--small {
+  @extend %kubik-button;
   padding: var(--kubik-interface-space-100) var(--kubik-interface-space-200);
   height: var(--kubik-interface-space-750);
   font-size: var(--kubik-interface-font-size-small);
 }
 
-%button-secondary {
-  @extend %button;
+%kubik-button--secondary {
+  @extend %kubik-button;
   background-color: transparent;
   color: var(--kubik-interface-color-brand-400);
   &:hover {
@@ -41,31 +41,8 @@
   }
 }
 
-@mixin button {
-  box-sizing: border-box;
-  display: inline-block;
-  padding: .75rem 1.25rem;
-  height: var(--kubik-interface-space-800);
-  font-family: var(--kubik-interface-base-font-family);
-  font-size: var(--kubik-interface-font-size-small);
-  font-weight: 400;
-  color: var(--kubik-interface-color-brand-400);
-  background: var(--kubik-interface-color-white);
-  text-decoration: none;
-  border: 2px solid var(--kubik-interface-color-brand-400);
-  border-radius: var(--kubik-interface-radius-100);
-  cursor: pointer;
-  transition: .2s;
-
-  &:hover {
-    color: var(--kubik-interface-color-white);
-    background: var(--kubik-interface-color-brand-400);
-  }
-
-}
-
 // Nested Elements Buttons
-%add-nested-button {
+%kubik-button-nested-add {
   display: flex;
   align-items: center;
   background: transparent;
@@ -85,7 +62,7 @@
   }
 }
 
-%remove-nested-button {
+%kubik-button-nested-remove {
   color: var(--kubik-interface-color-grey-500);
   font-size: var(--kubik-interface-font-size-small);
   font-family: var(--kubik-interface-base-font-family);
@@ -105,7 +82,7 @@
 }
 
 // Action Buttons
-%action_button {
+%kubik-action-button {
   box-sizing: border-box;
   display: inline-block;
   padding: 0 var(--kubik-interface-space-400);
@@ -125,9 +102,7 @@
   }
 }
 
-
-
-%action-button-alt {
+%kubik-action-button--secondary {
   display: inline-block;
   cursor: pointer;
   padding: var(--kubik-interface-space-100) var(--kubik-interface-space-350);

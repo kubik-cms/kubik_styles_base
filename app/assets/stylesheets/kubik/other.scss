@@ -17,7 +17,7 @@
     border: 2px dashed var(--kubik-interface-color-grey-200);
   }
   span, .main_text {
-    @extend %h4;
+    @extend %kubik-typography-h4;
     display: block; position: relative;
     text-align: center;
   }
@@ -31,7 +31,7 @@
 
   }
   .large-cta__hint {
-    @extend %para;
+    @extend %kubik-typography-para;
     text-align: center;
     color: var(--kubik-interface-color-grey-300);
   }
