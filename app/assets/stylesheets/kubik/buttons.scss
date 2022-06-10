@@ -1,4 +1,4 @@
-%kubik-button {
+@mixin kubik-button {
   box-sizing: border-box;
   display: inline-block;
   padding: .75rem 1.25rem;
@@ -23,15 +23,15 @@
   }
 }
 
-%kubik-button--small {
-  @extend %kubik-button;
+@mixin kubik-button--small {
+  @include kubik-button;
   padding: var(--kubik-interface-space-100) var(--kubik-interface-space-200);
   height: var(--kubik-interface-space-750);
   font-size: var(--kubik-interface-font-size-small);
 }
 
-%kubik-button--secondary {
-  @extend %kubik-button;
+@mixin kubik-button--secondary {
+  @include kubik-button;
   background-color: transparent;
   color: var(--kubik-interface-color-brand-400);
   &:hover {
@@ -42,7 +42,7 @@
 }
 
 // Nested Elements Buttons
-%kubik-button-nested-add {
+@mixin kubik-button-nested-add {
   display: flex;
   align-items: center;
   background: transparent;
@@ -62,7 +62,7 @@
   }
 }
 
-%kubik-button-nested-remove {
+@mixin kubik-button-nested-remove {
   color: var(--kubik-interface-color-grey-500);
   font-size: var(--kubik-interface-font-size-small);
   font-family: var(--kubik-interface-base-font-family);
@@ -82,7 +82,7 @@
 }
 
 // Action Buttons
-%kubik-action-button {
+@mixin kubik-action-button {
   box-sizing: border-box;
   display: inline-block;
   padding: 0 var(--kubik-interface-space-400);
@@ -102,7 +102,7 @@
   }
 }
 
-%kubik-action-button--secondary {
+@mixin kubik-action-button--secondary {
   display: inline-block;
   cursor: pointer;
   padding: var(--kubik-interface-space-100) var(--kubik-interface-space-350);

@@ -1,62 +1,62 @@
-%kubik-typography-h1 {
+@mixin kubik-typography-h1 {
   color: var(--kubik-interface-color-grey-700);
   font-size: 30px;
   font-weight: 700;
 }
 
-%kubik-typography-h2 {
+@mixin kubik-typography-h2 {
   color: var(--kubik-interface-color-grey-700);
   font-size: 26px;
   font-weight: 400;
 }
 
-%kubik-typography-h3 {
+@mixin kubik-typography-h3 {
   color: var(--kubik-interface-color-grey-700);
   font-size: 20px;
   font-weight: 700;
 }
 
-%kubik-typography-h4 {
+@mixin kubik-typography-h4 {
   color: var(--kubik-interface-color-grey-700);
   font-size: 16px;
   font-weight: 700;
 }
 
-%kubik-typography-h5 {
+@mixin kubik-typography-h5 {
   color: var(--kubik-interface-color-grey-700);
   font-size: 14px;
   font-weight: 700;
 }
 
-%kubik-typography-h6 {
+@mixin kubik-typography-h6 {
   color: var(--kubik-interface-color-grey-700);
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-%kubik-typography-para {
+@mixin kubik-typography-para {
   color: var(--kubik-interface-color-grey-700);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7em;
 }
 
-%kubik-typography-para--small {
+@mixin kubik-typography-para--small {
   color: var(--kubik-interface-color-grey-700);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5em;
 }
 
-%kubik-typography-title {
+@mixin kubik-typography-title {
   color: var(--kubik-interface-color-grey-700);
   font-family: var(--kubik-interface-base-font-family);
   font-size: var(--kubik-interface-base-font-size);
   font-weight: 700;
 }
 
-%kubik-typography-subtitle {
+@mixin kubik-typography-subtitle {
   padding-bottom: 5px;
   margin-bottom: 30px;
   color: var(--kubik-interface-color-grey-700);
@@ -65,7 +65,7 @@
   border-bottom: 2px solid --var(--kubik-interface-color-grey-200);
 }
 
-%kubik-typography-link {
+@mixin kubik-typography-link {
   font-size: 14px;
   font-weight: 400;
   color: --var(--kubik-interface-color-brand-400);

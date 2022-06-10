@@ -1,4 +1,4 @@
-%standard-pill {
+@mixin kubik-pill {
   padding: .25rem .5rem;
   font-size: var(--kubik-interface-font-size-smaller);
   color: var(--kubik-interface-color-grey-600);
@@ -6,27 +6,32 @@
   border: 1px solid var(--kubik-interface-color-grey-600);
   border-radius: 1.25rem;
 }
-%active-pill {
+
+@mixin kubik-pill--active {
   border-color: var(--kubik-interface-color-notice);
   color: var(--kubik-interface-color-white);
   background-color: var(--kubik-interface-color-notice);
 }
-%inactive-pill {
+
+@mixin kubik-pill--inactive {
   border-color: var(--kubik-interface-color-grey-600);
   color: var(--kubik-interface-color-white);
   background-color: var(--kubik-interface-color-grey-600);
 }
-%alert-pill {
+
+@mixin kubik-pill--alert {
   border-color: var(--kubik-interface-color-alert);
   color: var(--kubik-interface-color-white);
   background-color: var(--kubik-interface-color-alert);
 }
-%white-pill {
+
+@mixin kubik-pill--white {
   border-color: var(--kubik-interface-color-white);
   color: var(--kubik-interface-color-brand-400);
   background-color: var(--kubik-interface-color-white);
 }
-%neutral-pill {
+
+@mixin kubik-pill--neutral {
   border-color: var(--kubik-interface-color-brand-400);
   color: var(--kubik-interface-color-white);
   background-color: var(--kubik-interface-color-brand-400);

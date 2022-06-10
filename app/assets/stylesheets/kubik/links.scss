@@ -1,5 +1,5 @@
 @mixin kubik-link {
-  @extend %kubik-typography-link;
+  @include kubik-typography-link;
 
   position: relative;
   color: var(--kubik-interface-color-brand-400);
