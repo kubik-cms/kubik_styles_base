@@ -49,6 +49,13 @@
   line-height: 1.5em;
 }
 
+%kubik-typography-title {
+  color: var(--kubik-interface-color-grey-700);
+  font-family: var(--kubik-interface-base-font-family);
+  font-size: var(--kubik-interface-base-font-size);
+  font-weight: 700;
+}
+
 %kubik-typography-subtitle {
   padding-bottom: 5px;
   margin-bottom: 30px;

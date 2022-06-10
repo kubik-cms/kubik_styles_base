@@ -1,48 +1,4 @@
-@mixin title_text {
-  color: var(--kubik-interface-color-grey-700);
-  font-family: var(--kubik-interface-base-font-family);
-  font-size: var(--kubik-interface-base-font-size);
-  font-weight: 700;
-}
-%title_text {
-  @include title_text;
-}
-
-@mixin title_link {
-  color: var(--kubik-interface-color-brand-400);
-  font-family: var(--kubik-interface-base-font-family);
-  font-size: var(--kubik-interface-base-font-size);
-  font-weight: 700;
-  &:before {
-    display: none;
-  }
-  &:hover {
-    text-decoration: underline;
-    background: inherit;
-  }
-}
-%title_link {
-  @include title_link;
-}
-
-@mixin table_link {
-  color: var(--kubik-interface-color-brand-400);
-  font-family: var(--kubik-interface-base-font-family);
-  font-size: var(--kubik-interface-font-size-small);
-  font-weight: 700;
-  &:before {
-    display: none;
-  }
-  &:hover {
-    text-decoration: underline;
-    background: inherit;
-  }
-}
-%table_link {
-  @include table_link;
-}
-
-@mixin general_link {
+@mixin kubik-link {
   @extend %kubik-typography-link;
 
   position: relative;
@@ -75,12 +31,7 @@
   }
 }
 
-%general_link {
-  @include general_link;
-}
-
-
-%nav_link {
+@mixin kubik-link-nav {
   box-sizing: border-box;
   height: var(--kubik-interface-space-700);
   font-family: var(--kubik-interface-base-font-family);
@@ -97,27 +48,27 @@
   }
 }
 
-%nav_link_active {
-  @extend %nav_link;
+@mixin kubik-link-nav--active {
+  @include kubik-link-nav;
   color: var(--kubik-interface-color-brand-400);
   background: var(--kubik-interface-color-grey-700);
 }
 
-%user_link {
+@mixin kubik-link-user {
   font-family: var(--kubik-interface-base-font-family);
   font-size: var(--kubik-interface-font-size-small);
   font-weight: 700;
   color: var(--kubik-interface-color-brand-400);
 }
 
-%sign_out_link {
+@mixin kubik-link-sign-out {
   font-family: var(--kubik-interface-base-font-family);
   font-size: var(--kubik-interface-font-size-small);
   font-weight: 400;
   color: var(--kubik-interface-color-grey-400);
 }
 
-%tab_link {
+@mixin kubik-link-tab {
   font-family: var(--kubik-interface-base-font-family);
   font-size: var(--kubik-interface-font-size-small);
   font-weight: 400;
@@ -127,3 +78,36 @@
     color: var(--kubik-interface-color-white);
   }
 }
+
+@mixin kubik-link-table {
+  color: var(--kubik-interface-color-brand-400);
+  font-family: var(--kubik-interface-base-font-family);
+  font-size: var(--kubik-interface-font-size-small);
+  font-weight: 700;
+
+  &:before {
+    display: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    background: inherit;
+  }
+}
+
+@mixin kubik-link-title {
+  color: var(--kubik-interface-color-brand-400);
+  font-family: var(--kubik-interface-base-font-family);
+  font-size: var(--kubik-interface-base-font-size);
+  font-weight: 700;
+
+  &:before {
+    display: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    background: inherit;
+  }
+}
+
