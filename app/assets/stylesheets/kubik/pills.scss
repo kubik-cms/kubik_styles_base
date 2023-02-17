@@ -36,3 +36,21 @@
   color: var(--kubik-interface-color-white);
   background-color: var(--kubik-interface-color-brand-400);
 }
+.kubik-pill {
+  @include kubik-pill;
+  &--active {
+    @include kubik-pill--active;
+  }
+  &--inactive {
+    @include kubik-pill--inactive;
+  }
+  &--alert {
+    @include kubik-pill--alert;
+  }
+  &--white {
+    @include kubik-pill--white;
+  }
+  &--neutral {
+    @include kubik-pill--neutral;
+  }
+}
